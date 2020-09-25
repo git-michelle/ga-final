@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="bullet.svg"
+   id="svg30"
+   version="1.1"
+   fill="none"
+   viewBox="0 0 34 18"
+   height="18"
+   width="34">
+  <metadata
+     id="metadata36">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs34" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg30"
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="78"
+     inkscape:cy="29.5"
+     inkscape:cx="30.5"
+     inkscape:zoom="11.271186"
+     showgrid="false"
+     id="namedview32"
+     inkscape:window-height="860"
+     inkscape:window-width="1274"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <path
+     id="path24"
+     fill-opacity="0.63"
+     fill="#a8dadc"
+     d="m 22.084007,1.8116646 c 0.8468,-1.46659994 2.9637,-1.46659994 3.8105,0 l 7.0148,12.1500004 c 0.8468,1.4667 -0.2117,3.3 -1.9053,3.3 h -14.0296 c -1.6935,0 -2.752,-1.8333 -1.9052,-3.3 z" />
+  <path
+     id="path26"
+     fill-opacity="0.72"
+     fill="#1800ff"
+     d="m 8.0693075,1.8106646 c 0.8468,-1.46659994 2.9637995,-1.46659994 3.8104995,0 l 7.0148,12.1500004 c 0.8468,1.4667 -0.2117,3.3 -1.9052,3.3 H 2.9598075 c -1.6936,0 -2.75209998,-1.8333 -1.9053,-3.3 z" />
+  <path
+     id="path28"
+     fill="#d63e2a"
+     d="m 8.0683075,4.0185646 c -0.8468,-1.4666 0.2117,-3.29999994 1.9053,-3.29999994 H 24.003207 c 1.6935,0 2.752,1.83339994 1.9052,3.29999994 l -7.0148,12.1500004 c -0.8467,1.4667 -2.9637,1.4667 -3.8105,0 z" />
+</svg>

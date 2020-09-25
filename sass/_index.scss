@@ -1,0 +1,185 @@
+.main-container.main-container-home {
+  grid-template-rows: 100vh repeat(6, min-content);
+
+  // who we are header
+  .intro-header {
+    background-color: yellow;
+    grid-row: 2;
+    grid-column: 2 / span 12;
+    padding-top: $space-lg;
+  }
+
+  //who we are section
+  .intro-img {
+    background-color: goldenrod;
+    grid-row: 3;
+    grid-column: 7 / span 7;
+    margin-bottom: $space-lg;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .intro-content {
+    padding-top: $space-lg;
+    grid-row: 3;
+    grid-column: 2 / span 5;
+
+    p {
+      margin-bottom: $space-sm;
+    }
+  }
+
+  //our ministry section
+  .ministry-header {
+    background-color: teal;
+    grid-row: 5;
+    grid-column: 2 / span 12;
+    margin-top: $space-lg;
+    margin-bottom: $space-lg;
+  }
+
+  .ministry-img {
+    grid-row: 6;
+    grid-column: 2 / span 6;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding-bottom: $space-lg;
+    }
+  }
+
+  .ministry-content {
+    grid-row: 6;
+    grid-column: 8 / span 5;
+
+    p {
+      margin-bottom: $space-sm;
+    }
+
+    button {
+      margin-top: $space-md;
+      margin-bottom: $space-lg;
+      border: 0.3rem solid $color-secondary;
+      background-color: $color-light;
+    }
+  }
+
+  .test {
+    //hero section
+    &-1 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.52),
+          rgba(34, 19, 117, 0.73)
+        ),
+        url(../img/home/home1.jpg);
+      background-size: cover;
+      grid-row: 1;
+      grid-column: 1 / -1;
+    }
+
+    //rows 2 and 3 have been moved outside test
+
+    //initiaves container with shadow
+    &-4 {
+      background-color: blue;
+      grid-row: 4;
+      grid-column: 2 / span 12;
+      background: $color-light;
+      box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.15);
+
+      .container-initiatives {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, min-content);
+        grid-column-gap: 2.4rem;
+        row-gap: $space-lg;
+        padding-bottom: $space-lg;
+
+        .header-initiatives {
+          grid-row: 1;
+          grid-column: 1 / -1;
+          padding-top: $space-lg;
+          padding-bottom: $space-md;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 60%;
+
+          h2 {
+            margin-bottom: $space-md;
+          }
+        }
+
+        .bring-a-smile-img {
+          grid-row: 2;
+          grid-column: 2 / span 5;
+
+          img {
+            max-width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .bring-a-smile-content {
+          grid-row: 2;
+          grid-column: 7 / span 5;
+
+          h3 {
+            margin-bottom: $space-md;
+          }
+
+          p {
+            margin-bottom: $space-md;
+          }
+
+          button {
+            background-color: $color-primary;
+            color: $text-light;
+          }
+        }
+
+        .mothers-of-gold-img {
+          grid-row: 3;
+          grid-column: 7 / span 5;
+
+          img {
+            max-width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .mothers-of-gold-content {
+          grid-row: 3;
+          grid-column: 2 / span 5;
+
+          h3 {
+            margin-bottom: $space-md;
+          }
+
+          p {
+            margin-bottom: $space-md;
+          }
+
+          button {
+            background-color: $color-primary;
+            color: $text-light;
+          }
+        }
+      }
+    }
+
+    //row 5 ministry header out of test
+    //row 6 has 2 divs for ministry
+
+    &-7 {
+      background-color: palevioletred;
+      grid-row: 7;
+      grid-column: 2 / span 12;
+    }
+  }
+}
