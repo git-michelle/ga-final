@@ -78,7 +78,8 @@
   .support {
     grid-row: 5;
     grid-column: 1 / -1;
-    background-image: url(../img/ministries/background-triangles.svg);
+    background: url(../img/ministries/triangle-bg.png) no-repeat center
+      center/cover;
 
     h2 {
       padding-top: $space-lg;
