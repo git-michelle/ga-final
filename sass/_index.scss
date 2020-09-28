@@ -125,7 +125,7 @@
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(3, min-content);
-      grid-column-gap: 2.4rem;
+      column-gap: 2.4rem;
       row-gap: $space-lg;
       padding-bottom: $space-lg;
 

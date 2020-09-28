@@ -1,0 +1,345 @@
+//intro section
+.main-container.mission-section-container {
+  grid-template-rows: min-content;
+  padding-top: $space-lg;
+  padding-bottom: $space-lg;
+
+  .mission-headers {
+    grid-row: 1;
+    grid-column: 2 / span 12;
+
+    h4 {
+      margin-bottom: $space-md;
+    }
+  }
+
+  .mission-content {
+    grid-row: 2;
+    grid-column: 2 / span 7;
+    padding-top: $space-md;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: $space-sm;
+      }
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      grid-row: 2;
+      grid-column: 2 / span 12;
+    }
+  }
+
+  .mission-img {
+    grid-row: 2;
+    grid-column: 9 / span 5;
+    padding-top: $space-sm;
+
+    img {
+      max-width: 115%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      grid-row: 3;
+      grid-column: 2 / span 12;
+      margin-left: auto;
+      margin-right: auto;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+//Objectives section
+
+.main-container.objectives-main-container {
+  padding-bottom: $space-lg;
+
+  header {
+    grid-row: 1;
+    grid-column: 2 / span 12;
+    margin-bottom: $space-lg;
+  }
+
+  .objective-content-container {
+    grid-row: 2;
+    grid-column: 2 / span 12;
+
+    display: grid;
+    //auto responsive grid
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    row-gap: $space-md;
+    column-gap: $space-sm;
+
+    .numbered-circle {
+      font-family: $font-body;
+      font-weight: $font-weight-karla-reg;
+      font-size: 5rem;
+      max-width: 7.4rem;
+      max-height: 7.4rem;
+      text-align: center;
+      margin-bottom: $space-sm;
+
+      border: 0.6rem solid $color-secondary;
+      border-radius: 50%;
+    }
+
+    p {
+      padding-right: 2rem;
+    }
+  }
+}
+
+//   who we work with section
+
+.main-container.work-with-section-container {
+  padding-top: $space-lg;
+  padding-bottom: $space-lg;
+  background: linear-gradient(
+    to bottom,
+    $color-secondary 0%,
+    $color-secondary 60%,
+    $color-light 60%,
+    $color-light 100%
+  );
+
+  grid-template-rows: min-content;
+
+  .work-with-header {
+    grid-row: 1;
+    grid-column: 2 / span 12;
+    margin-bottom: $space-lg;
+  }
+
+  .work-with-content-container {
+    grid-row: 2;
+    grid-column: 2 / span 12;
+
+    display: grid;
+    //auto responsive grid
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    row-gap: $space-md;
+    column-gap: 2.4rem;
+
+    .card {
+      padding: $space-md $space-sm;
+      background: $color-light;
+      box-shadow: 0 0.8rem 1.3rem rgba(0, 0, 0, 0.1);
+
+      h3 {
+        margin-bottom: $space-sm;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    background: $color-secondary;
+  }
+}
+
+//    income section
+
+.main-container.income-section-container {
+  padding-bottom: $space-lg;
+  grid-template-rows: min-content;
+
+  .income-header {
+    grid-row: 1;
+    grid-column: 2 / span 12;
+    margin-bottom: $space-md;
+
+    @media only screen and (max-width: $bp-large) {
+      padding-top: $space-md;
+    }
+  }
+
+  .income-content {
+    grid-row: 2;
+    grid-column: 2 / span 6;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: $space-sm;
+      }
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 2 / span 12;
+      grid-row: 3;
+    }
+  }
+
+  .income-img {
+    grid-row: 2;
+    grid-column: 9 / span 5;
+
+    img {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 2 / span 12;
+      padding-bottom: $space-sm;
+      grid-row: 2;
+    }
+  }
+}
+
+// measure of success section
+.main-container.measure-section-container {
+  background-color: $color-secondary;
+  padding-top: $space-lg;
+  padding-bottom: $space-lg;
+
+  grid-template-rows: min-content;
+
+  .measures-header {
+    grid-row: 1;
+    grid-column: 2 / span 12;
+    margin-bottom: $space-md;
+  }
+
+  .measures-img {
+    grid-row: 2;
+    grid-column: 2 / span 6;
+
+    img {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 2 / span 12;
+      padding-bottom: $space-sm;
+      grid-row: 2;
+    }
+  }
+
+  .measures-content {
+    grid-row: 2;
+    grid-column: 8 / span 6;
+    margin-left: $space-sm;
+
+    .measure {
+      display: flex;
+      align-items: flex-start;
+
+      img {
+        margin-right: $space-sm;
+        height: 1.8rem;
+        width: 3.4rem;
+        margin-top: 0.8rem;
+      }
+
+      p {
+        margin-left: $space-sm;
+        margin-bottom: $space-sm;
+      }
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 2 / span 12;
+      padding-bottom: $space-sm;
+      grid-row: 3;
+    }
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    padding-top: $space-md;
+    padding-bottom: $space-md;
+  }
+}
+
+//awareness programs section
+
+.main-container.awareness-section-container {
+  padding-top: $space-lg;
+  padding-bottom: $space-lg;
+
+  grid-template-rows: min-content;
+
+  .awareness-header {
+    grid-row: 1;
+    grid-column: 2 / span 12;
+    margin-bottom: $space-md;
+  }
+
+  .awareness-img {
+    grid-row: 2;
+    grid-column: 9 / span 5;
+
+    img {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 2 / span 12;
+      padding-bottom: $space-sm;
+      grid-row: 2;
+    }
+  }
+
+  .awareness-content {
+    grid-row: 2;
+    grid-column: 2 / span 6;
+
+    p {
+      padding-bottom: $space-sm;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 2 / span 12;
+      padding-bottom: $space-sm;
+      grid-row: 3;
+    }
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    padding-top: $space-md;
+    padding-bottom: $space-md;
+  }
+}
+
+//health initiatives section
+.main-container.health-initiatives-container {
+  grid-template-rows: min-content;
+  padding-bottom: $space-md;
+
+  .health-header {
+    grid-row: 1;
+    grid-column: 7 / span 7;
+    margin-bottom: $space-md;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 2 / span 12;
+    }
+  }
+
+  .health-img {
+    grid-row: 2;
+    grid-column: 2 / span 5;
+
+    img {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 2 / span 12;
+      padding-bottom: $space-sm;
+    }
+  }
+
+  .health-content {
+    grid-row: 2;
+    grid-column: 7 / span 7;
+
+    p {
+      padding-bottom: $space-sm;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 2 / span 12;
+      grid-row: 3;
+    }
+  }
+}

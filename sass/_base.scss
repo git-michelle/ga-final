@@ -2,6 +2,7 @@
 $color-primary: #1800ff;
 $color-secondary: #e2f3f3;
 $color-cta: #d63e2a;
+$color-base: #f9f9f9;
 $color-light: #fff;
 $text-dark: #222;
 $text-light: #fff;
@@ -73,25 +74,21 @@ $space-lg: 11.2rem;
   max-width: 144rem;
   margin-right: auto;
   margin-left: auto;
-  padding-top: $space-lg;
-  padding-bottom: $space-lg;
+  // padding-top: $space-lg;
+  // padding-bottom: $space-lg;
   color: $text-dark;
 
   display: grid;
-  grid-template-columns: minmax(11.6rem, 1fr) repeat(12, 1fr) minmax(
-      11.6rem,
-      1fr
-    );
-  grid-column-gap: 2.4rem;
+  grid-template-columns: minmax(2rem, 1fr) repeat(12, 1fr) minmax(2rem, 1fr);
+  column-gap: 2.4rem;
   //grid rows set in individual pages
 }
 
 //underlines
 
 h2.underline {
-  position: relative;
-
   &--primary {
+    position: relative;
     &:before {
       content: " ";
       position: absolute;
@@ -104,9 +101,8 @@ h2.underline {
 }
 
 h3.underline {
-  position: relative;
-
   &--primary {
+    position: relative;
     &:before {
       content: " ";
       position: absolute;
@@ -118,6 +114,7 @@ h3.underline {
   }
 
   &--secondary {
+    position: relative;
     &:before {
       content: " ";
       position: absolute;
@@ -129,6 +126,7 @@ h3.underline {
   }
 
   &--cta {
+    position: relative;
     &:before {
       content: " ";
       position: absolute;
@@ -141,9 +139,8 @@ h3.underline {
 }
 
 h4.underline {
-  position: relative;
-
   &--primary {
+    position: relative;
     &:before {
       content: " ";
       position: absolute;
@@ -184,13 +181,19 @@ h4.underline {
 }
 
 //Responsive breakpoints
-$bp-largest: 75em; //1200px
+$bp-largest: 78.75; //1260px
+$bp-large: 75em; //1200px
+$bp-medium: 48em; //768 px
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
 
   @media only screen and (max-width: $bp-largest) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
     font-size: 50%;
   }
 }
