@@ -11,7 +11,6 @@
   .spreading-joy-content {
     grid-row: 2;
     grid-column: 2 / span 6;
-    background-color: greenyellow;
 
     p {
       padding-bottom: $space-sm;
@@ -25,7 +24,6 @@
   .spreading-joy-img {
     grid-row: 2;
     grid-column: 8 / span 6;
-    background-color: pink;
 
     img {
       transform: translate(1rem, 4rem);
@@ -48,23 +46,33 @@
 .main-container.touring-section {
   grid-row: min-content;
   grid-column: 1 / -1;
-  background: url(../img/bringasmile/triangle-bg.png) no-repeat center
-    center/cover;
+  background: url(../img/bringasmile/triangle-bg.png) no-repeat top/contain;
+  background-size: 100% 50%;
 
-  //mothers sample partial bg
-  //     background: linear-gradient(
-  //   to bottom,
-  //   $color-secondary 0%,
-  //   $color-secondary 60%,
-  //   $color-light 60%,
-  //   $color-light 100%
-  // );
+  @media only screen and (max-width: $bp-md-lg) {
+    background: linear-gradient(
+      to bottom,
+      $color-secondary 0%,
+      $color-secondary 30%,
+      $color-light 30%,
+      $color-light 100%
+    );
+  }
+  @media only screen and (max-width: $bp-small) {
+    background: linear-gradient(
+      to bottom,
+      $color-secondary 0%,
+      $color-secondary 20%,
+      $color-light 20%,
+      $color-light 100%
+    );
+  }
 
   header {
     grid-row: 1;
     grid-column: 2 / span 12;
-    background-color: purple;
-    margin-bottom: $space-md;
+    margin: 0 auto;
+    margin-bottom: $space-sm;
   }
 
   .section-touring-karamoja {
@@ -92,7 +100,6 @@
         &--1 {
           grid-row: 2;
           grid-column: 2 / span 3;
-          background-color: seashell;
 
           img {
             margin-bottom: $space-sm;
@@ -106,10 +113,8 @@
         &--2 {
           grid-row: 2;
           grid-column: 5 / span 4;
-          background-color: lightseagreen;
           max-width: 80%;
           margin: 0 auto;
-          // padding-bottom: $space-md;
 
           img {
             margin-bottom: $space-sm;
@@ -124,7 +129,6 @@
         &--3 {
           grid-row: 2;
           grid-column: 9 / span 3;
-          background-color: lightcoral;
 
           img {
             margin-bottom: $space-sm;
@@ -138,11 +142,3 @@
     }
   }
 }
-
-// .background-entire-touring-area {
-//   grid-row: 3 / span 2;
-//   grid-column: 1 / -1;
-//   background: url(../img/bringasmile/triangle-bg.png) no-repeat center
-//     center/cover;
-//   // background-size: 40%;
-// }

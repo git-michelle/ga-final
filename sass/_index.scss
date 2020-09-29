@@ -1,5 +1,15 @@
-.main-container.main-container-home {
-  grid-template-rows: 100vh repeat(7, min-content);
+.main-container.hero-section {
+  grid-template-rows: 90vh;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-rows: 70vh;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 50vh;
+  }
+  @media only screen and (max-width: $bp-small) {
+    grid-template-rows: 70vh;
+  }
 
   //hero section
 
@@ -22,8 +32,15 @@
     p,
     button {
       margin-left: 5.2rem;
+      margin-right: 5.2rem;
       max-width: 30%;
       color: $text-light;
+      @media only screen and (max-width: $bp-large) {
+        max-width: 60%;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        max-width: 90%;
+      }
     }
 
     p {
@@ -51,57 +68,85 @@
       &:focus {
         outline: none;
       }
+      @media only screen and (max-width: $bp-medium) {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
+}
 
-  // who we are header
-  .intro-header {
-    background-color: yellow;
-    grid-row: 2;
+// who we are header
+
+.main-container.home-intro-section {
+  grid-template-rows: min-content;
+  padding-bottom: $space-md;
+
+  header {
+    grid-row: 1;
     grid-column: 2 / span 12;
-    padding-top: $space-lg;
   }
 
-  //who we are section
   .intro-img {
-    background-color: goldenrod;
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 7 / span 7;
 
     // move it up for desktop
     img {
       max-width: 95%;
       transform: translateY(-6.2rem);
-      margin-bottom: $space-lg;
+
+      @media only screen and (max-width: $bp-large) {
+        transform: translateY(0);
+      }
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      grid-row: 2;
+      grid-column: 2 / span 12;
     }
   }
 
   .intro-content {
-    padding-top: $space-lg;
-    grid-row: 3;
+    padding-top: $space-sm;
+    grid-row: 2;
     grid-column: 2 / span 5;
 
     p {
       margin-bottom: $space-sm;
     }
+    @media only screen and (max-width: $bp-large) {
+      grid-row: 3;
+      grid-column: 2 / span 12;
+    }
   }
+}
 
-  //initiatives section
+//initiatives section
 
-  .background-for-entire-initiatives-area {
-    grid-row: 4 / span 2;
-    grid-column: 1 / -1;
+.main-container.initiatives-main-section {
+  grid-template-rows: min-content;
+
+  background: linear-gradient(
+    to bottom,
+    $color-secondary 0%,
+    $color-secondary 40%,
+    $color-light 40%,
+    $color-light 100%
+  );
+
+  @media only screen and (max-width: $bp-medium) {
     background: linear-gradient(
       to bottom,
       $color-secondary 0%,
-      $color-secondary 40%,
-      $color-light 40%,
+      $color-secondary 35%,
+      $color-light 35%,
       $color-light 100%
     );
   }
 
-  .header-initiatives {
-    grid-row: 4;
+  .initiatives-intro {
+    grid-row: 1;
     grid-column: 2 / span 12;
     padding-top: $space-lg;
     padding-bottom: $space-md;
@@ -109,13 +154,15 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 60%;
-    h2 {
-      margin-bottom: $space-md;
+
+    @media only screen and (max-width: $bp-medium) {
+      text-align: left;
+      max-width: 100%;
     }
   }
 
   .initiatives-section {
-    grid-row: 5;
+    grid-row: 2;
     grid-column: 2 / span 12;
     background-color: $color-light;
 
@@ -124,23 +171,26 @@
     .container-initiatives {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(3, min-content);
-      column-gap: 2.4rem;
+      grid-template-rows: min-content;
+      column-gap: 2.2rem;
       row-gap: $space-lg;
-      padding-bottom: $space-lg;
 
       .bring-a-smile-img {
-        grid-row: 2;
+        grid-row: 1;
         grid-column: 2 / span 5;
 
         img {
           max-width: 100%;
           object-fit: cover;
+        }
+        @media only screen and (max-width: $bp-large) {
+          grid-row: 1;
+          grid-column: 2 / span 10;
         }
       }
 
       .bring-a-smile-content {
-        grid-row: 2;
+        grid-row: 1;
         grid-column: 7 / span 5;
 
         h3 {
@@ -155,20 +205,34 @@
           background-color: $color-primary;
           color: $text-light;
         }
+
+        @media only screen and (max-width: $bp-large) {
+          grid-row: 2;
+          grid-column: 2 / span 10;
+          display: grid;
+          button {
+            justify-self: center;
+          }
+        }
       }
 
       .mothers-of-gold-img {
-        grid-row: 3;
+        grid-row: 2;
         grid-column: 7 / span 5;
 
         img {
           max-width: 100%;
           object-fit: cover;
         }
+
+        @media only screen and (max-width: $bp-large) {
+          grid-row: 3;
+          grid-column: 2 / span 10;
+        }
       }
 
       .mothers-of-gold-content {
-        grid-row: 3;
+        grid-row: 2;
         grid-column: 2 / span 5;
 
         h3 {
@@ -183,33 +247,52 @@
           background-color: $color-primary;
           color: $text-light;
         }
+
+        @media only screen and (max-width: $bp-large) {
+          grid-row: 4;
+          grid-column: 2 / span 10;
+          display: grid;
+          button {
+            justify-self: center;
+          }
+        }
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        row-gap: $space-md;
       }
     }
   }
+}
 
-  //our ministry section
-  .ministry-header {
-    background-color: teal;
-    grid-row: 6;
+//our ministry section
+
+.main-container.ministry-section {
+  grid-template-rows: min-content;
+
+  header {
+    grid-row: 1;
     grid-column: 2 / span 12;
-    margin-top: $space-lg;
-    margin-bottom: $space-lg;
   }
 
   .ministry-img {
-    grid-row: 7;
+    grid-row: 2;
     grid-column: 2 / span 6;
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      padding-bottom: $space-lg;
+    }
+    @media only screen and (max-width: $bp-large) {
+      grid-row: 2;
+      grid-column: 2 / span 12;
+      margin-bottom: $space-sm;
     }
   }
 
   .ministry-content {
-    grid-row: 7;
+    grid-row: 2;
     grid-column: 8 / span 5;
 
     p {
@@ -218,24 +301,31 @@
 
     button {
       margin-top: $space-md;
-      margin-bottom: $space-lg;
       border: 0.3rem solid $color-secondary;
       background-color: $color-light;
     }
-  }
-
-  //become a gift angel section
-
-  .become-a-ga {
-    grid-row: 8;
-    grid-column: 1 / -1;
-    background: url(../img/home/triangle-bg.png) no-repeat center center/cover;
-
-    h2 {
-      padding-top: $space-lg;
-      padding-bottom: $space-md;
+    @media only screen and (max-width: $bp-large) {
+      grid-row: 3;
+      grid-column: 2 / span 12;
+      display: grid;
+      button {
+        margin-top: 0;
+        justify-self: center;
+      }
     }
+  }
+}
 
+//become a gift angel section
+
+.main-container.become-a-ga {
+  grid-template-rows: min-content;
+  grid-column: 1 / -1;
+  background: url(../img/ministries/triangle-bg.png) no-repeat center
+    center/cover;
+
+  .content-container {
+    grid-column: 1 / -1;
     p {
       margin: 0 auto;
       max-width: 50%;
@@ -245,7 +335,6 @@
       background-color: $color-primary;
       color: $text-light;
       margin-top: $space-md;
-      margin-bottom: $space-lg;
     }
 
     text-align: center;

@@ -32,9 +32,9 @@ h1 {
   font-weight: $font-weight-rubik-med;
   font-size: 7.5rem;
 
-  // @media only screen and (max-width: $bp-small) {
-  //   font-size: 4rem;
-  // }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 4rem;
+  }
 }
 
 h2 {
@@ -151,6 +151,9 @@ h2.underline {
       width: 5rem;
       border: 0.41rem solid $color-primary;
       background-color: $color-primary;
+      @media only screen and (max-width: $bp-medium) {
+        width: 3rem;
+      }
     }
   }
 }
