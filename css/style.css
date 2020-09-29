@@ -78,7 +78,7 @@ h4 {
   margin-left: auto;
   color: #222;
   display: grid;
-  grid-template-columns: minmax(2rem, 1fr) repeat(12, 1fr) minmax(2rem, 1fr);
+  grid-template-columns: minmax(1rem, 1fr) repeat(12, 1fr) minmax(1rem, 1fr);
   column-gap: 2.4rem; }
 
 h2.underline--primary {
@@ -694,75 +694,100 @@ html {
       color: #fff;
       margin-top: 6.4rem; }
 
-.main-container.main-container-smile {
-  grid-template-rows: repeat 4, min-content; }
-  .main-container.main-container-smile h4 {
+.main-container.intro-section {
+  grid-template-rows: min-content;
+  padding-bottom: 6.4rem;
+  background-color: gold; }
+  .main-container.intro-section header {
     grid-row: 1;
-    grid-column: 2 / span 12;
-    margin-bottom: 6.4rem; }
-  .main-container.main-container-smile .spreading-joy-content {
+    grid-column: 2 / span 12; }
+  .main-container.intro-section .spreading-joy-content {
     grid-row: 2;
     grid-column: 2 / span 6;
-    background-color: greenyellow;
-    padding-bottom: 6.4rem; }
-    .main-container.main-container-smile .spreading-joy-content h2 {
-      margin-bottom: 6.4rem; }
-    .main-container.main-container-smile .spreading-joy-content p {
+    background-color: greenyellow; }
+    .main-container.intro-section .spreading-joy-content p {
       padding-bottom: 3.2rem; }
-  .main-container.main-container-smile .spreading-joy-img {
+    @media only screen and (max-width: 75em) {
+      .main-container.intro-section .spreading-joy-content {
+        grid-column: 2 / span 12;
+        grid-row: 2; } }
+  .main-container.intro-section .spreading-joy-img {
     grid-row: 2;
     grid-column: 8 / span 6;
     background-color: pink; }
-    .main-container.main-container-smile .spreading-joy-img img {
+    .main-container.intro-section .spreading-joy-img img {
       transform: translate(1rem, 4rem);
       max-width: 110%; }
-  .main-container.main-container-smile .touring-karamoja-heading {
-    grid-row: 3;
+      @media only screen and (max-width: 75em) {
+        .main-container.intro-section .spreading-joy-img img {
+          transform: translate(0);
+          max-width: 100%; } }
+    @media only screen and (max-width: 75em) {
+      .main-container.intro-section .spreading-joy-img {
+        grid-column: 2 / span 12;
+        grid-row: 3;
+        padding-top: 3.2rem;
+        margin: 0 auto; } }
+
+.main-container.touring-section {
+  grid-row: min-content;
+  grid-column: 1 / -1;
+  background: url(../img/bringasmile/triangle-bg.png) no-repeat center center/cover; }
+  .main-container.touring-section header {
+    grid-row: 1;
     grid-column: 2 / span 12;
-    background-color: goldenrod;
+    background-color: purple;
     margin-bottom: 6.4rem; }
-  .main-container.main-container-smile .background-entire-touring-area {
-    grid-row: 3 / span 2;
-    grid-column: 1 / -1;
-    background: url(../img/bringasmile/triangle-bg.png) no-repeat center center/cover; }
-  .main-container.main-container-smile .section-touring-karamoja {
-    grid-row: 4;
-    grid-column: 2 / span 12;
-    background-color: royalblue; }
-  .main-container.main-container-smile .container-touring-karamoja {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, min-content);
-    column-gap: 2.4rem;
-    row-gap: 6.4rem;
-    padding-top: 6.4rem;
-    padding-bottom: 6.4rem;
-    background-color: #fff;
-    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.15); }
-    .main-container.main-container-smile .container-touring-karamoja p {
-      grid-row: 1;
-      grid-column: 2 / span 10; }
-    .main-container.main-container-smile .container-touring-karamoja .key-component--1 {
-      grid-row: 2;
-      grid-column: 2 / span 3;
-      background-color: seashell; }
-      .main-container.main-container-smile .container-touring-karamoja .key-component--1 img {
-        margin-bottom: 3.2rem; }
-    .main-container.main-container-smile .container-touring-karamoja .key-component--2 {
-      grid-row: 2;
-      grid-column: 5 / span 4;
-      background-color: lightseagreen;
-      max-width: 80%;
-      margin: 0 auto;
-      padding-bottom: 6.4rem; }
-      .main-container.main-container-smile .container-touring-karamoja .key-component--2 img {
-        margin-bottom: 3.2rem; }
-    .main-container.main-container-smile .container-touring-karamoja .key-component--3 {
-      grid-row: 2;
-      grid-column: 9 / span 3;
-      background-color: lightcoral; }
-      .main-container.main-container-smile .container-touring-karamoja .key-component--3 img {
-        margin-bottom: 3.2rem; }
+  .main-container.touring-section .section-touring-karamoja {
+    grid-row: 2;
+    grid-column: 2 / span 12; }
+    .main-container.touring-section .section-touring-karamoja .container-touring-karamoja {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: min-content;
+      column-gap: 2.4rem;
+      row-gap: 6.4rem;
+      padding-top: 6.4rem;
+      padding-bottom: 6.4rem;
+      background-color: #fff;
+      box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.15); }
+      .main-container.touring-section .section-touring-karamoja .container-touring-karamoja p {
+        grid-row: 1;
+        grid-column: 2 / span 10; }
+      .main-container.touring-section .section-touring-karamoja .container-touring-karamoja .key-component--1 {
+        grid-row: 2;
+        grid-column: 2 / span 3;
+        background-color: seashell; }
+        .main-container.touring-section .section-touring-karamoja .container-touring-karamoja .key-component--1 img {
+          margin-bottom: 3.2rem; }
+        @media only screen and (max-width: 62em) {
+          .main-container.touring-section .section-touring-karamoja .container-touring-karamoja .key-component--1 {
+            grid-column: 2 / span 10;
+            grid-row: 2; } }
+      .main-container.touring-section .section-touring-karamoja .container-touring-karamoja .key-component--2 {
+        grid-row: 2;
+        grid-column: 5 / span 4;
+        background-color: lightseagreen;
+        max-width: 80%;
+        margin: 0 auto; }
+        .main-container.touring-section .section-touring-karamoja .container-touring-karamoja .key-component--2 img {
+          margin-bottom: 3.2rem; }
+        @media only screen and (max-width: 62em) {
+          .main-container.touring-section .section-touring-karamoja .container-touring-karamoja .key-component--2 {
+            grid-column: 2 / span 10;
+            grid-row: 3;
+            max-width: 100%;
+            margin: 0; } }
+      .main-container.touring-section .section-touring-karamoja .container-touring-karamoja .key-component--3 {
+        grid-row: 2;
+        grid-column: 9 / span 3;
+        background-color: lightcoral; }
+        .main-container.touring-section .section-touring-karamoja .container-touring-karamoja .key-component--3 img {
+          margin-bottom: 3.2rem; }
+        @media only screen and (max-width: 62em) {
+          .main-container.touring-section .section-touring-karamoja .container-touring-karamoja .key-component--3 {
+            grid-column: 2 / span 10;
+            grid-row: 4; } }
 
 .main-container.mission-section-container {
   grid-template-rows: min-content; }

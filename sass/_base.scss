@@ -134,7 +134,7 @@ h4 {
   color: $text-dark;
 
   display: grid;
-  grid-template-columns: minmax(2rem, 1fr) repeat(12, 1fr) minmax(2rem, 1fr);
+  grid-template-columns: minmax(1rem, 1fr) repeat(12, 1fr) minmax(1rem, 1fr);
   column-gap: 2.4rem;
   //grid rows set in individual pages
 }
