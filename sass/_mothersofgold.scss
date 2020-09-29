@@ -1,22 +1,15 @@
 //intro section
 .main-container.mission-section-container {
   grid-template-rows: min-content;
-  padding-top: $space-lg;
-  padding-bottom: $space-lg;
 
   .mission-headers {
     grid-row: 1;
     grid-column: 2 / span 12;
-
-    h4 {
-      margin-bottom: $space-md;
-    }
   }
 
   .mission-content {
     grid-row: 2;
     grid-column: 2 / span 7;
-    padding-top: $space-md;
 
     p {
       &:not(:last-child) {
@@ -33,7 +26,6 @@
   .mission-img {
     grid-row: 2;
     grid-column: 9 / span 5;
-    padding-top: $space-sm;
 
     img {
       max-width: 115%;
@@ -54,12 +46,10 @@
 //Objectives section
 
 .main-container.objectives-main-container {
-  padding-bottom: $space-lg;
-
   header {
     grid-row: 1;
     grid-column: 2 / span 12;
-    margin-bottom: $space-lg;
+    margin-bottom: $space-md;
   }
 
   .objective-content-container {
@@ -94,8 +84,6 @@
 //   who we work with section
 
 .main-container.work-with-section-container {
-  padding-top: $space-lg;
-  padding-bottom: $space-lg;
   background: linear-gradient(
     to bottom,
     $color-secondary 0%,
@@ -109,7 +97,7 @@
   .work-with-header {
     grid-row: 1;
     grid-column: 2 / span 12;
-    margin-bottom: $space-lg;
+    margin-bottom: $space-md;
   }
 
   .work-with-content-container {
@@ -141,7 +129,6 @@
 //    income section
 
 .main-container.income-section-container {
-  padding-bottom: $space-lg;
   grid-template-rows: min-content;
 
   .income-header {
@@ -189,9 +176,6 @@
 // measure of success section
 .main-container.measure-section-container {
   background-color: $color-secondary;
-  padding-top: $space-lg;
-  padding-bottom: $space-lg;
-
   grid-template-rows: min-content;
 
   .measures-header {
@@ -233,7 +217,7 @@
 
       p {
         margin-left: $space-sm;
-        margin-bottom: $space-sm;
+        padding-bottom: $space-sm;
       }
     }
 
@@ -243,25 +227,16 @@
       grid-row: 3;
     }
   }
-
-  @media only screen and (max-width: $bp-large) {
-    padding-top: $space-md;
-    padding-bottom: $space-md;
-  }
 }
 
 //awareness programs section
 
 .main-container.awareness-section-container {
-  padding-top: $space-lg;
-  padding-bottom: $space-lg;
-
   grid-template-rows: min-content;
 
   .awareness-header {
     grid-row: 1;
     grid-column: 2 / span 12;
-    margin-bottom: $space-md;
   }
 
   .awareness-img {
@@ -293,11 +268,6 @@
       grid-row: 3;
     }
   }
-
-  @media only screen and (max-width: $bp-large) {
-    padding-top: $space-md;
-    padding-bottom: $space-md;
-  }
 }
 
 //health initiatives section
@@ -308,7 +278,6 @@
   .health-header {
     grid-row: 1;
     grid-column: 7 / span 7;
-    margin-bottom: $space-md;
 
     @media only screen and (max-width: $bp-large) {
       grid-column: 2 / span 12;

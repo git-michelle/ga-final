@@ -13,30 +13,12 @@ $font-body: "Karla", sans-serif;
 $font-weight-rubik-med: 500;
 $font-weight-karla-reg: 400;
 
-//TEXT SIZES
-h1 {
-  font-family: $font-headings;
-  font-weight: $font-weight-rubik-med;
-  font-size: 7.5rem;
-}
-
-h2 {
-  font-family: $font-headings;
-  font-weight: $font-weight-rubik-med;
-  font-size: 5rem;
-}
-
-h3 {
-  font-family: $font-headings;
-  font-weight: $font-weight-rubik-med;
-  font-size: 3rem;
-}
-
-h4 {
-  font-family: $font-headings;
-  font-weight: $font-weight-rubik-med;
-  font-size: 1.8rem;
-}
+//Responsive breakpoints
+$bp-largest: 78.75; //1260px
+$bp-large: 75em; //1200px
+$bp-md-lg: 62em; //992px
+$bp-medium: 48em; //768 px
+$bp-small: 37.5em; //600px
 
 //SPACES
 $space-tiny: 1.6rem;
@@ -44,12 +26,57 @@ $space-sm: 3.2rem;
 $space-md: 6.4rem;
 $space-lg: 11.2rem;
 
+//TEXT SIZES
+h1 {
+  font-family: $font-headings;
+  font-weight: $font-weight-rubik-med;
+  font-size: 7.5rem;
+
+  // @media only screen and (max-width: $bp-small) {
+  //   font-size: 4rem;
+  // }
+}
+
+h2 {
+  font-family: $font-headings;
+  font-weight: $font-weight-rubik-med;
+  font-size: 5rem;
+  margin-bottom: $space-md;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 3.1rem;
+    margin-bottom: $space-sm;
+  }
+}
+
+h3 {
+  font-family: $font-headings;
+  font-weight: $font-weight-rubik-med;
+  font-size: 3rem;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 2.5rem;
+  }
+}
+
+h4 {
+  font-family: $font-headings;
+  font-weight: $font-weight-rubik-med;
+  font-size: 1.8rem;
+  margin-bottom: $space-md;
+  @media only screen and (max-width: $bp-small) {
+    margin-bottom: $space-sm;
+  }
+}
+
 //FONT CLASSES
 .p-style {
   font-family: "Karla", sans-serif;
   font-weight: $font-weight-karla-reg;
   font-size: 1.8rem;
   line-height: 1.5;
+
+  // @media only screen and (max-width: $bp-small) {
+  //   font-size: 1.6rem;
+  // }
 }
 
 .p-style-hero {
@@ -57,6 +84,9 @@ $space-lg: 11.2rem;
   font-weight: $font-weight-karla-reg;
   font-size: 2.5rem;
   line-height: 1.5;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 2rem;
+  }
 }
 
 .paragraph-mobile {
@@ -66,7 +96,34 @@ $space-lg: 11.2rem;
   line-height: 1.5;
 }
 
-// REUSABLE COMPONENTS
+//***** REUSABLE COMPONENTS
+
+//container padding
+.dbl-pad {
+  padding-top: $space-lg;
+  padding-bottom: $space-lg;
+
+  @media only screen and (max-width: $bp-large) {
+    padding-top: $space-md;
+    padding-bottom: $space-md;
+  }
+}
+
+.top-pad {
+  padding-top: $space-lg;
+
+  @media only screen and (max-width: $bp-large) {
+    padding-top: $space-md;
+  }
+}
+
+.bottom-pad {
+  padding-bottom: $space-lg;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding-bottom: $space-md;
+  }
+}
 
 //page layout grid
 .main-container {
@@ -74,8 +131,6 @@ $space-lg: 11.2rem;
   max-width: 144rem;
   margin-right: auto;
   margin-left: auto;
-  // padding-top: $space-lg;
-  // padding-bottom: $space-lg;
   color: $text-dark;
 
   display: grid;
@@ -179,11 +234,6 @@ h4.underline {
   padding: 0;
   box-sizing: inherit;
 }
-
-//Responsive breakpoints
-$bp-largest: 78.75; //1260px
-$bp-large: 75em; //1200px
-$bp-medium: 48em; //768 px
 
 html {
   box-sizing: border-box;

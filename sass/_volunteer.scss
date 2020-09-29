@@ -1,40 +1,15 @@
-.main-container.main-container-volunteer {
-  grid-template-rows: repeat(4, mincontent);
-  padding-bottom: 0; //exception for blue section
+.main-container.intro-section {
+  grid-template-rows: min-content;
 
-  //blue background for rows 3 and 4
-  .background-secondary {
-    grid-row: 3 / span 2;
-    grid-column: 1 / -1;
-    background-color: $color-secondary;
-  }
-
-  .headers {
-    &--1 {
-      grid-row: 1;
-      grid-column: 2 / span 12;
-      background-color: yellowgreen;
-
-      h2,
-      h4 {
-        margin-bottom: $space-md;
-      }
-    }
-
-    &--2 {
-      grid-row: 3;
-      grid-column: 2 / span 12;
-
-      padding-top: $space-lg;
-      padding-bottom: $space-md;
-    }
+  header {
+    grid-row: 1;
+    grid-column: 2 / span 12;
   }
 
   .volunteer-intro {
     &--content {
       grid-row: 2;
       grid-column: 2 / span 5;
-      background-color: white;
 
       hr {
         background-color: $color-secondary;
@@ -45,7 +20,6 @@
 
       p {
         padding-bottom: $space-sm;
-        background-color: orange;
 
         .quote {
           margin-top: $space-sm;
@@ -56,24 +30,45 @@
         background-color: $color-primary;
         color: $text-light;
         margin-top: $space-sm;
-        margin-bottom: $space-lg;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        grid-column: 2 / span 12;
+        grid-row: 2;
       }
     }
 
     &--img {
       grid-row: 2;
       grid-column: 8 / span 6;
-      background-color: olive;
+
       img {
         width: 100%;
+        height: auto;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        grid-column: 2 / span 12;
+        grid-row: 3;
+        padding-top: $space-md;
       }
     }
   }
+}
 
-  // blue section
+// section 2 Why volunteer
+
+.main-container.why-section {
+  background-color: $color-secondary;
+
+  header {
+    grid-row: 1;
+    grid-column: 2 / span 12;
+  }
+
   .volunteer-why {
     &--content {
-      grid-row: 4;
+      grid-row: 2;
       grid-column: 2 / span 6;
 
       p {
@@ -81,14 +76,24 @@
           margin-bottom: $space-sm;
         }
       }
-      padding-bottom: $space-lg;
+
+      @media only screen and (max-width: $bp-large) {
+        grid-column: 2 / span 12;
+        grid-row: 2;
+      }
     }
 
     &--img {
-      grid-row: 4;
+      grid-row: 2;
       grid-column: 8 / span 6;
       img {
         width: 100%;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        grid-column: 2 / span 12;
+        grid-row: 3;
+        padding-top: $space-sm;
       }
     }
   }
