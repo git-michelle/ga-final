@@ -16,7 +16,7 @@ $font-weight-karla-reg: 400;
 //Responsive breakpoints
 $bp-largest: 78.75; //1260px
 $bp-large: 75em; //1200px
-$bp-md-lg: 62em; //992px
+$bp-md-lg: 64em; //1025px
 $bp-medium: 48em; //768 px
 $bp-small: 37.5em; //600px
 
@@ -97,6 +97,12 @@ h4 {
 }
 
 //***** REUSABLE COMPONENTS
+
+// link style
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 //container padding
 .dbl-pad {
@@ -215,7 +221,8 @@ h4.underline {
   width: 20.9rem;
   height: 4.8rem;
   font-family: "Karla", sans-serif;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 700;
   border: none;
   cursor: pointer;
 
