@@ -4,13 +4,12 @@
   .header {
     grid-row: 1;
     grid-column: 2 / span 12;
-    // background-color: palegreen;
   }
 
   .donate-content {
     grid-row: 2;
     grid-column: 2 / span 6;
-    // background-color: orchid;
+
     overflow: auto;
 
     p {
@@ -45,7 +44,9 @@
       button.btn {
         width: 28.4rem;
         height: 4.8rem;
-        font-weight: bold;
+        font-size: 1.8rem;
+        font-family: $font-body;
+        font-weight: 700;
         border: none;
         cursor: pointer;
 

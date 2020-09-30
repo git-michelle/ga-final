@@ -677,7 +677,9 @@ footer.main-container {
       .main-container.main-container-donate aside.donate-options .container-flex button.btn {
         width: 28.4rem;
         height: 4.8rem;
-        font-weight: bold;
+        font-size: 1.8rem;
+        font-family: "Karla", sans-serif;
+        font-weight: 700;
         border: none;
         cursor: pointer; }
         .main-container.main-container-donate aside.donate-options .container-flex button.btn--givingway {
@@ -823,8 +825,7 @@ footer.main-container {
     grid-column: 2 / span 12; }
   .main-container.main-container-intro .ministries-intro--content {
     grid-row: 2;
-    grid-column: 2 / span 6;
-    background-color: white; }
+    grid-column: 2 / span 6; }
     .main-container.main-container-intro .ministries-intro--content p:not(:last-child) {
       margin-bottom: 3.2rem; }
     @media only screen and (max-width: 75em) {

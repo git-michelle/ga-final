@@ -9,7 +9,6 @@
   .contact-content {
     grid-column: 2 / span 5;
     grid-row: 2 / span 1;
-    // background-color: aqua;
 
     p {
       margin-bottom: $space-sm;
@@ -24,7 +23,6 @@
   .address-container {
     grid-column: 2 / span 5;
     grid-row: 3 / span 1;
-    // background-color: orange;
 
     .address-items {
       display: grid;
@@ -85,7 +83,6 @@
   .contact-form-container {
     grid-column: 8 / span 6;
     grid-row: 2 / span 2;
-    // background-color: royalblue;
 
     .form {
       display: flex;
