@@ -1,0 +1,252 @@
+nav {
+  background: #ffffff;
+  box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.15);
+  //   height: 7rem;
+  font-family: $font-body;
+  margin: 0 auto;
+  max-width: 144rem;
+
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .logo {
+    float: left;
+    color: $text-dark;
+    font-size: 2.3rem;
+    font-family: $font-brand;
+    line-height: 3;
+    font-weight: 500;
+    padding-left: 2rem;
+  }
+
+  img {
+    float: left;
+    left: 1rem;
+    height: 4.3rem;
+    width: 4.3rem;
+    margin-top: 1rem;
+    margin-left: 4.8rem;
+  }
+  ul {
+    float: right;
+    margin-right: 5rem;
+    list-style: none;
+    position: relative;
+
+    li {
+      float: left;
+      display: inline-block;
+      margin: 0 0.5rem;
+      .current-page {
+        font-weight: bold;
+        // color: lawngreen;
+      }
+      a {
+        color: $text-dark;
+        line-height: 7rem;
+        text-decoration: none;
+        font-size: 1.8rem;
+        padding: 0.8rem 2rem;
+      }
+      &:hover {
+        font-weight: bold;
+      }
+
+      &:hover {
+        > ul {
+          top: 7rem;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    ul {
+      position: absolute;
+      top: 7rem;
+      border-top: 0.4rem solid $color-primary;
+      opacity: 0;
+      visibility: hidden;
+      transition: top 0.2s ease-in-out;
+      background: $color-light;
+      box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.15);
+      border-radius: 0.3rem;
+      li {
+        position: relative;
+        margin: 0;
+        width: 22rem;
+        float: none;
+        display: list-item;
+        a {
+          padding-left: 1rem;
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}
+.menu-btn {
+  background: blue;
+  margin-left: 2rem;
+  color: $text-light;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+}
+.show-dropdown {
+  display: none;
+}
+.burger {
+  display: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+// MOBILE DISPLAY ************
+
+@media screen and (max-width: $bp-large) {
+  .mobile-menu-backdrop {
+    position: fixed;
+    top: 7rem;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    // height: calc(100% - 7rem);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  //prevent scrolling when menu open
+  .fixed-position {
+    position: fixed;
+  }
+
+  nav {
+    ul {
+      margin-right: 0;
+      right: 0;
+      position: absolute;
+      z-index: 1; //important
+
+      top: 7rem;
+      height: 80%;
+      width: 70vw;
+      background-color: $color-secondary;
+      li {
+        display: block;
+        width: 100%;
+        a {
+          font-size: 2rem;
+          &:hover {
+            box-shadow: none;
+          }
+        }
+      }
+      //dropdown items
+      ul {
+        li {
+          display: block;
+          width: 100%;
+        }
+        top: 7rem;
+        border-top: 0;
+        float: none;
+        position: static;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        background-color: $color-secondary;
+        box-shadow: none;
+        padding-left: 1.5rem;
+
+        a {
+          padding-left: 5rem;
+          font-size: 1.8rem;
+          margin-left: 2rem;
+        }
+      }
+    }
+
+    img {
+      margin-left: 2.5rem;
+    }
+    .logo {
+      padding-left: 1rem;
+    }
+  }
+  //label names for dropdowns
+  .show-dropdown {
+    + {
+      a {
+        display: none;
+      }
+    }
+    display: block;
+    color: $text-dark;
+    font-size: 2rem;
+    padding-left: 2rem;
+    line-height: 7rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    span.arrow {
+      display: inline-block;
+      font-family: $font-body, monospace, sans-serif;
+      font-weight: lighter;
+      color: #555;
+      font-stretch: ultra-expanded;
+      font-size: 2rem;
+    }
+    span.rotate-arrow {
+      display: inline-block;
+      font-family: $font-body, monospace, sans-serif;
+      font-weight: lighter;
+      font-stretch: ultra-expanded;
+      font-size: 2rem;
+      transform: rotate(180deg);
+    }
+  }
+  ul {
+    display: none;
+  }
+  .burger {
+    display: block;
+    color: $color-primary;
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    line-height: 7rem;
+    cursor: pointer;
+    font-size: 2.5rem;
+  }
+
+  [id="burger-checkbox"] {
+    &:checked {
+      + {
+        ul {
+          display: block;
+        }
+      }
+    }
+  }
+  [id^="dropdown"] {
+    &:checked {
+      + {
+        ul {
+          display: block;
+        }
+      }
+    }
+  }
+  span.cancel {
+    &:before {
+      content: "\00d7";
+      color: $color-primary;
+      line-height: 7rem;
+      cursor: pointer;
+      font-size: 5rem;
+    }
+  }
+}

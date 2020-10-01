@@ -10,6 +10,7 @@ $text-light: #fff;
 //FONT VARIABLES
 $font-headings: "Rubik", sans-serif;
 $font-body: "Karla", sans-serif;
+$font-brand: "Montserrat", sans-serif;
 $font-weight-rubik-med: 500;
 $font-weight-karla-reg: 400;
 
@@ -89,16 +90,15 @@ h4 {
   }
 }
 
-.paragraph-mobile {
-  font-family: "Karla", sans-serif;
-  font-weight: $font-weight-karla-reg;
-  font-size: 1.6rem;
-  line-height: 1.5;
-}
-
 //***** REUSABLE COMPONENTS
 
 // link style
+button a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 a {
   text-decoration: none;
   color: inherit;

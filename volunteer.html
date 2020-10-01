@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <script src="https://kit.fontawesome.com/9fc022b51e.js" crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@500&family=Rubik:wght@500&display=swap"
       rel="stylesheet"
@@ -12,12 +14,63 @@
     <title>Gift Angels | Volunteer</title>
   </head>
   <body>
+
+    <!-- Navigation and mobile backdrop -->
+    <div id="backdrop"></div>
+    
+    <nav>
+      <!-- LOGO -->
+      <a href="/index.html"><img src="img/logo-navbar.svg" alt="my logo" /></a>
+      <div class="logo"><a href="/index.html">Gift Angels Foundation</a></div>
+      <!-- checkbox for mobile view  -->
+      <label for="burger-checkbox" class="burger"><span class="fa fa-bars"></span></label>
+      <input type="checkbox" id="burger-checkbox" />
+    
+      <ul>
+        <!-- menu item 1 -->
+    
+        <li><a href="/about.html">About us</a></li>
+        <!-- menu item 2 with dropdown -->
+        <li>
+          <!-- label is for mobile name -->
+          <label for="dropdown-1" class="show-dropdown dropdown-1">Our Initiatives&nbsp; <span id="arrow-1" class="arrow"> v
+            </span></label>
+          <!-- anchor tag is for desktop name -->
+          <a href="#">Our Initiatives</a>
+          <input type="checkbox" id="dropdown-1" />
+          <ul>
+            <li><a href="/bringasmile.html">Bring a Smile to a Child </a></li>
+            <li><a href="/mothersofgold.html">Mothers of Gold</a></li>
+          </ul>
+        </li>
+    
+        <!-- menu item 3 with dropdown -->
+        <li>
+          <label for="dropdown-2" class="show-dropdown dropdown-2">Get Involved&nbsp;<span id="arrow-2" class="arrow"> v
+            </span></label>
+          <a href="#">Get Involved</a>
+          <input type="checkbox" id="dropdown-2" />
+          <ul>
+            <li><a href="/volunteer.html" class="current-page">Volunteer</a></li>
+            <li><a href="/prayer.html">Pray With Us</a></li>
+            <li><a href="/ministries.html">Join Our Ministry</a></li>
+          </ul>
+        </li>
+    
+        <!-- menu items 4 and 5 -->
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/donate.html" class="menu-btn" type="button">Donate</a></li>
+      </ul>
+    </nav>
+
+
+    <!-- page content starts  -->
     <section class="main-container volunteer-intro-section dbl-pad">
       <header class="headers--1">
         <h4 class="underline--primary">VOLUNTEER</h4>
         <h2>Volunteer With Us</h2>
       </header>
-
+      
       <!-- section 1 Volunteer intro and img  -->
 
       <!-- content -->
@@ -171,6 +224,7 @@
       </div>
     </footer>
     
-    <!-- js  -->
+    <!-- js for navigation menu -->
+    <script src="/javascript/script.js"></script>
   </body>
 </html>
