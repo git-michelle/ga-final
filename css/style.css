@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Montserrat:wght@400;500&family=Rubik:wght@500&display=swap");
 h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -349,7 +350,8 @@ input[type="checkbox"] {
     cursor: pointer;
     font-size: 3rem;
     font-weight: bolder;
-    z-index: 500; }
+    z-index: 500;
+    padding: 1rem 0 1rem 1rem; }
   span.cancel:before {
     content: "\00d7";
     color: #1800ff;
@@ -479,7 +481,7 @@ footer.main-container {
     .main-container.hero-section {
       grid-template-rows: 70vh; } }
   .main-container.hero-section .hero {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(22, 9, 95, 0.6)), url(../img/home/home1.jpg) no-repeat center center/cover;
+    background: linear-gradient(to top right, rgba(0, 0, 0, 0.6), rgba(22, 9, 95, 0.5)), url(../img/home/home1.jpg) no-repeat center center/cover;
     grid-row: 1;
     grid-column: 1 / -1;
     display: flex;
