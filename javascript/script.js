@@ -1,5 +1,6 @@
 const burger = document.querySelector(".burger"),
-  burgerSpan = document.querySelector("span.fa-bars"),
+  burgerSpan = document.querySelector("span.burger-bars"),
+  menuClose = document.querySelector("span.cancel"),
   body = document.getElementsByTagName("BODY")[0],
   backdrop = document.querySelector("#backdrop");
 
@@ -13,7 +14,12 @@ const dropdownOne = document.querySelector(".dropdown-1"),
   actionArrow = document.querySelector(".show-dropdown");
 
 burger.addEventListener("click", () => {
-  burgerSpan.classList.toggle("cancel");
+  // burgerSpan.classList.toggle("cancel");
+  backdrop.classList.toggle("mobile-menu-backdrop");
+  body.classList.toggle("fixed-position");
+});
+
+menuClose.addEventListener("click", () => {
   backdrop.classList.toggle("mobile-menu-backdrop");
   body.classList.toggle("fixed-position");
 });

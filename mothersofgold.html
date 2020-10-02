@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="https://kit.fontawesome.com/9fc022b51e.js" crossorigin="anonymous"></script>
-
     <link
       href="https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@500&family=Rubik:wght@500&display=swap"
       rel="stylesheet"
@@ -24,17 +22,28 @@
   <a href="/index.html"><img src="img/logo-navbar.svg" alt="my logo" /></a>
   <div class="logo"><a href="/index.html">Gift Angels Foundation</a></div>
   <!-- checkbox for mobile view  -->
-  <label for="burger-checkbox" class="burger"><span class="fa fa-bars"></span></label>
+  <label for="burger-checkbox" class="burger"><span class="burger-bars"></span></label>
   <input type="checkbox" id="burger-checkbox" />
 
   <ul>
+
+    <!-- HOME link and CLOSE MENU BUTTON for mobile -->
+    
+    <li>
+      <label for="burger-checkbox" class="burger show-dropdown mobile-only-item"><span class="cancel"></span></label>
+    </li>
+    
+    <li>
+      <label for="home" class="show-dropdown mobile-only-item"><a href="/index.html"><br />Home</a></label>
+    </li>
+
     <!-- menu item 1 -->
 
-    <li><a href="/about.html">About us</a></li>
+    <li><a href="/about.html">About Us</a></li>
     <!-- menu item 2 with dropdown -->
     <li>
       <!-- label is for mobile name -->
-      <label for="dropdown-1" class="show-dropdown dropdown-1">Our Initiatives&nbsp; <span id="arrow-1" class="arrow"> v
+      <label for="dropdown-1" class="show-dropdown dropdown-1">Our Initiatives&nbsp; <span id="arrow-1" class="arrow"> >
         </span></label>
       <!-- anchor tag is for desktop name -->
       <a href="#">Our Initiatives</a>
@@ -47,14 +56,14 @@
 
     <!-- menu item 3 with dropdown -->
     <li>
-      <label for="dropdown-2" class="show-dropdown dropdown-2">Get Involved&nbsp;<span id="arrow-2" class="arrow"> v
+      <label for="dropdown-2" class="show-dropdown dropdown-2">Get Involved&nbsp;<span id="arrow-2" class="arrow"> >
         </span></label>
       <a href="#">Get Involved</a>
       <input type="checkbox" id="dropdown-2" />
       <ul>
         <li><a href="/volunteer.html">Volunteer</a></li>
         <li><a href="/prayer.html">Pray With Us</a></li>
-        <li><a href="/ministries.html" class="current-page">Join Our Ministry</a></li>
+        <li><a href="/ministries.html" >Join Our Ministry</a></li>
       </ul>
     </li>
 
@@ -67,7 +76,7 @@
 
     <!-- intro section -->
 
-    <section class="main-container mission-section-container dbl-pad">
+      <section class="main-container mission-section-container dbl-pad">
       <header class="mission-headers">
         <h4 class="underline--primary">MOTHERS OF GOLD</h4>
         <h2>Mothers of Gold Mission</h2>
@@ -86,11 +95,7 @@
         <p class="p-style">
           In the villages within this district, many women deal with teen
           pregnancies which causes them to drop out of school and ultimately
-          struggle to support themselves and their children. Many of these women
-          independently, running their households without the support of their
-          partner. The Mothers of Gold strives to empower young women through
-          socio-economic support programs that improve their quality of life and
-          in turn, help to continue to develop the community.
+          struggle to support themselves and their children. Many of these women independently run their households without the support of a partner. Mothers of Gold strives to empower young women through socio-economic support programs that improve their quality of life and in turn, they help to continue community development.
         </p>
       </div>
 
@@ -113,23 +118,20 @@
         <div class="objective">
           <div class="numbered-circle">1</div>
           <p class="p-style">
-            Provide avenues for improving welfare in Ngora communities through
-            the chicken distribution project.
+            Provide avenues for improving welfare in Ngora communities through our chicken distribution project.
           </p>
         </div>
         <div class="objective">
           <div class="numbered-circle">2</div>
           <p class="p-style">
-            Ensure that young women are aware of their human and civil rights by
-            providing legal interventions and sensitizations through training.
+            Ensure that young women are aware of their human and civil rights and assist through legal interventions.
           </p>
         </div>
         <div class="objective">
           <div class="numbered-circle">3</div>
           <p class="p-style">
-            Improve the quality of life for families living in the Ngora area by
-            providing an increase in household income from an average of a
-            dollar a day to at least 5 dollars a day.
+            Improve the quality of life for families living in the Ngora area by increasing household income from an average of a
+            dollar a day to at least five dollars a day.
           </p>
         </div>
         <div class="objective">
@@ -142,8 +144,7 @@
         <div class="objective">
           <div class="numbered-circle">5</div>
           <p class="p-style">
-            Improve hygiene in the community by constructing toilets for at
-            least 4 families each year.
+            Improve hygiene in the community by constructing toilets for at least four families each year.
           </p>
         </div>
       </div>
@@ -204,7 +205,7 @@
 
       <div class="income-content">
         <p class="p-style">
-          The Ngora region of Uganda is rich with beauty and resources, but it’s
+          The Ngora region of Uganda is rich with beauty and resources, but its
           people are greatly affected by poverty. A staggering 80% of the
           population lives below the poverty line. We believe that by investing
           in educational and awareness initiatives, we can combat this rampant
@@ -241,24 +242,20 @@
         <div class="measure measure--1">
           <img src="./img/bullet.svg" alt="multicolored bullet point" />
           <p class="p-style">
-            Every beneficiary returns 8 chickens after 6 months and still
-            retains 8 or more for themselves.
+            Every beneficiary returns eight chickens after six months and still retains eight or more for themselves.
           </p>
         </div>
         <div class="measure measure--2">
           <img src="./img/bullet.svg" alt="multicolored bullet point" />
           <p class="p-style">
-            At the end of every cycle, every beneficiary should have reared at
-            least 40 chickens, that can be sold or utilized for eggs, making a
-            significant profit margin of at least 20% and saving 20% of their
-            total earnings.
+            At the end of every cycle, every beneficiary should have reared at least 40 chickens that can be sold or utilized for
+            eggs, realizing a substantial profit margin of at least 20% and saving 20% of their total earnings.
           </p>
         </div>
         <div class="measure measure--3">
           <img src="./img/bullet.svg" alt="multicolored bullet point" />
           <p class="p-style">
-            For this initiative to be seen as successful we hope to see an
-            extended outreach to over 20 villages.
+            For this initiative to be considered successful, we hope to see an extended outreach to over 20 villages.
           </p>
         </div>
         <div class="measure measure--4">
@@ -291,10 +288,8 @@
 
       <div class="awareness-content">
         <p class="p-style">
-          Issues such as domestic violence, land wrangles, teenage pregnancies,
-          poor financial management, etc, are often rampant due to the lack of
-          measures taken to provide the people their legal rights to protect
-          them.
+          A broad range of social issues, including domestic violence, land wrangles, and poor financial management, often results
+          from a lack of information about legal rights.
         </p>
         <p class="p-style">
           The Mothers of Gold Awareness and Sensitization program aims to
@@ -305,13 +300,9 @@
           health, and basic financial management.
         </p>
         <p class="p-style">
-          This project’s main goal is to improve the welfare of young women in
-          the Ngora district, Uganda. The women are strong and hard-working,
-          given the right opportunity to provide a better life for themselves
-          and their children. It is their strength that gives us the confidence
-          that this project will be fruitful and sustained. For each village, a
-          needs assessment will be conducted to ensure that we customize the
-          training and workshops to topics that are relevant to them.
+          This project’s main goal is to improve the welfare of young women in the Ngora district. It is their strength and
+          hard-working nature that gives us the confidence that this project will be fruitful. For each village, a needs
+          assessment will be conducted to ensure that we customize the training and workshops to topics that are relevant to them.
         </p>
       </div>
     </section>
@@ -332,14 +323,11 @@
       <div class="health-content">
         <p class="p-style">
           <strong
-            >As an organization, we are aiming at creating sustainable programs
-            that the local communities, groups, and individuals in the area can
-            use.</strong
+            >As an organization, we aim to create sustainable programs that the local communities, groups, and individuals in the
+            area can use.</strong
           >
-          The partnerships we are making and intend to make with, local leaders
-          and health centers are all steps to ensure that the community takes
-          ownership of every project started in their area and aids in getting
-          the change we want to see.
+          The partnerships we are making and intend to make with local leaders and health centers are all steps to ensure that the
+          community takes ownership of every project started in their area and aids in achieving the change we want to see.
         </p>
         <p class="p-style">
           The Health centers will rebuild people’s confidence in the importance

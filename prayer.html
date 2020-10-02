@@ -9,8 +9,6 @@
       rel="stylesheet"
     />
 
-    <script src="https://kit.fontawesome.com/9fc022b51e.js" crossorigin="anonymous"></script>
-
    <link rel="stylesheet" href="css/style.css" />
     <title>Gift Angels | Prayer</title>
   </head>
@@ -26,17 +24,28 @@
   <a href="/index.html"><img src="img/logo-navbar.svg" alt="my logo" /></a>
   <div class="logo"><a href="/index.html">Gift Angels Foundation</a></div>
   <!-- checkbox for mobile view  -->
-  <label for="burger-checkbox" class="burger"><span class="fa fa-bars"></span></label>
+  <label for="burger-checkbox" class="burger"><span class="burger-bars"></span></label>
   <input type="checkbox" id="burger-checkbox" />
 
   <ul>
+
+    <!-- HOME link and CLOSE MENU BUTTON for mobile -->
+    
+    <li>
+      <label for="burger-checkbox" class="burger show-dropdown mobile-only-item"><span class="cancel"></span></label>
+    </li>
+    
+    <li>
+      <label for="home" class="show-dropdown mobile-only-item"><a href="/index.html"><br />Home</a></label>
+    </li>
+    
     <!-- menu item 1 -->
 
-    <li><a href="/about.html">About us</a></li>
+    <li><a href="/about.html">About Us</a></li>
     <!-- menu item 2 with dropdown -->
     <li>
       <!-- label is for mobile name -->
-      <label for="dropdown-1" class="show-dropdown dropdown-1">Our Initiatives&nbsp; <span id="arrow-1" class="arrow"> v
+      <label for="dropdown-1" class="show-dropdown dropdown-1">Our Initiatives&nbsp; <span id="arrow-1" class="arrow"> >
         </span></label>
       <!-- anchor tag is for desktop name -->
       <a href="#">Our Initiatives</a>
@@ -49,7 +58,7 @@
 
     <!-- menu item 3 with dropdown -->
     <li>
-      <label for="dropdown-2" class="show-dropdown dropdown-2">Get Involved&nbsp;<span id="arrow-2" class="arrow"> v
+      <label for="dropdown-2" class="show-dropdown dropdown-2">Get Involved&nbsp;<span id="arrow-2" class="arrow"> >
         </span></label>
       <a href="#">Get Involved</a>
       <input type="checkbox" id="dropdown-2" />

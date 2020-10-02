@@ -1,10 +1,10 @@
 nav {
-  background: #ffffff;
+  background: $color-light;
   box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.15);
   //   height: 7rem;
   font-family: $font-body;
   margin: 0 auto;
-  max-width: 144rem;
+  max-width: 192rem;
 
   &:after {
     content: "";
@@ -41,7 +41,6 @@ nav {
       margin: 0 0.5rem;
       .current-page {
         font-weight: bold;
-        // color: lawngreen;
       }
       a {
         color: $text-dark;
@@ -59,9 +58,11 @@ nav {
           top: 7rem;
           opacity: 1;
           visibility: visible;
+          font-weight: normal;
         }
       }
     }
+    // desktop dropdowns
     ul {
       position: absolute;
       top: 7rem;
@@ -72,6 +73,7 @@ nav {
       background: $color-light;
       box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.15);
       border-radius: 0.3rem;
+      z-index: 1; //important
       li {
         position: relative;
         margin: 0;
@@ -109,14 +111,13 @@ input[type="checkbox"] {
 @media screen and (max-width: $bp-large) {
   .mobile-menu-backdrop {
     position: fixed;
-    top: 7rem;
     right: 0;
     width: 100%;
     height: 100%;
-    // height: calc(100% - 7rem);
-    background-color: rgba(0, 0, 0, 0.4);
+    background: rgba(251, 251, 251, 0.92);
+    z-index: 1;
   }
-  //prevent scrolling when menu open
+  //prevent scrolling when mobile menu open
   .fixed-position {
     position: fixed;
   }
@@ -126,10 +127,8 @@ input[type="checkbox"] {
       margin-right: 0;
       right: 0;
       position: absolute;
-      z-index: 1; //important
-
-      top: 7rem;
-      height: 80%;
+      z-index: 2;
+      height: 100vh; //vh so page content doesnt affect size
       width: 70vw;
       background-color: $color-secondary;
       li {
@@ -144,6 +143,7 @@ input[type="checkbox"] {
       }
       //dropdown items
       ul {
+        height: 100%; //important to be %
         li {
           display: block;
           width: 100%;
@@ -181,31 +181,28 @@ input[type="checkbox"] {
         display: none;
       }
     }
-    display: block;
+    display: inline-block;
     color: $text-dark;
     font-size: 2rem;
     padding-left: 2rem;
     line-height: 7rem;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    position: relative;
+
+    //if remove <br> infront of home-item, add left padding.
 
     span.arrow {
       display: inline-block;
-      font-family: $font-body, monospace, sans-serif;
       font-weight: lighter;
       color: #555;
-      font-stretch: ultra-expanded;
       font-size: 2rem;
+      transform: rotate(90deg);
     }
     span.rotate-arrow {
       display: inline-block;
-      font-family: $font-body, monospace, sans-serif;
       font-weight: lighter;
-      font-stretch: ultra-expanded;
+      color: #555;
       font-size: 2rem;
-      transform: rotate(180deg);
+      transform: rotate(-90deg);
     }
   }
   ul {
@@ -240,13 +237,26 @@ input[type="checkbox"] {
       }
     }
   }
+  span.burger-bars {
+    &:before {
+      content: "\2630";
+      color: $color-primary;
+      line-height: 7rem;
+      cursor: pointer;
+      font-size: 3rem;
+      font-weight: bolder;
+      z-index: 500;
+    }
+  }
   span.cancel {
     &:before {
       content: "\00d7";
       color: $color-primary;
-      line-height: 7rem;
+      padding-bottom: 1rem;
+      padding-left: 4rem; //wider click area
       cursor: pointer;
       font-size: 5rem;
+      font-weight: lighter;
     }
   }
 }
