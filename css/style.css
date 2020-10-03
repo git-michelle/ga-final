@@ -1384,51 +1384,54 @@ footer.main-container {
 
 .main-container.vision-section {
   grid-template-rows: min-content;
-  margin-bottom: 11.2rem; }
+  justify-content: center; }
   .main-container.vision-section .blue-right-side-section {
     grid-row: 1 / span 1;
-    grid-column: 9 / span 5;
+    grid-column: 8 / span 6;
     background-color: #e2f3f3; }
     @media only screen and (max-width: 75em) {
       .main-container.vision-section .blue-right-side-section {
         display: none; } }
   .main-container.vision-section .vision-img {
-    grid-row: 1;
+    grid-row: 1 / span 1;
     grid-column: 2 / span 8; }
     .main-container.vision-section .vision-img img {
-      max-width: 110%;
-      height: auto;
+      width: auto;
+      height: 100%;
       object-fit: cover; }
     @media only screen and (max-width: 75em) {
       .main-container.vision-section .vision-img {
+        grid-row: 1;
         grid-column: 2 / span 12;
-        max-height: 40vh; }
+        margin: 0 auto;
+        align-items: center; }
         .main-container.vision-section .vision-img img {
-          max-width: 100%;
           height: auto;
-          object-fit: cover; } }
+          max-width: 100%; } }
     @media only screen and (max-width: 48em) {
-      .main-container.vision-section .vision-img {
+      .main-container.vision-section .vision-img img {
         grid-column: 1 / -1; } }
   .main-container.vision-section .vision-content {
     background-color: #f9f9f9;
     grid-row: 1;
     grid-column: 6 / span 7;
-    margin-top: 3.2rem;
-    margin-bottom: 3.2rem;
-    padding: 6.4rem;
+    height: 90%;
+    align-self: center;
+    padding: 5rem;
     transform: translateX(6.4rem); }
     .main-container.vision-section .vision-content p:not(:last-child) {
-      padding-bottom: 3.2rem; }
+      margin-bottom: 3.2rem; }
     @media only screen and (max-width: 75em) {
       .main-container.vision-section .vision-content {
+        margin-top: 3.2rem;
         grid-row: 2;
         grid-column: 2 / span 12;
-        padding: 1.6rem;
+        height: 100%;
+        padding: 3.2rem;
         transform: translateX(0); } }
-  @media only screen and (max-width: 48em) {
-    .main-container.vision-section {
-      margin-bottom: 6.4rem; } }
+    @media only screen and (max-width: 48em) {
+      .main-container.vision-section .vision-content {
+        padding: 1.6rem; } }
 
 .main-container.mission-section {
   background: url(../img/about/triangle-bg.png) no-repeat center center/cover;
@@ -1452,6 +1455,9 @@ footer.main-container {
     column-gap: 3.2rem; }
     .main-container.mission-section .mission-content-list li {
       padding-right: 2rem; }
+    @media only screen and (max-width: 40rem) {
+      .main-container.mission-section .mission-content-list {
+        row-gap: 3.2rem; } }
 
 .main-container.help-section {
   grid-template-rows: min-content; }

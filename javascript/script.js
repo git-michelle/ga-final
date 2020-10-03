@@ -1,5 +1,5 @@
 const burger = document.querySelector(".burger"),
-  menuClose = document.querySelector("span.cancel"),
+  menuCloseContainer = document.querySelector("#cancel-container"),
   body = document.getElementsByTagName("BODY")[0],
   backdrop = document.querySelector("#backdrop");
 
@@ -20,26 +20,29 @@ burger.addEventListener("click", () => {
   body.classList.add("fixed-position");
 });
 
-// remove mobile backdrop and close menu
-backdrop.addEventListener("click", () => {
+// Close menu with x button. Must not use uncheck function
+menuCloseContainer.addEventListener("click", () => {
   backdrop.classList.remove("mobile-menu-backdrop");
   body.classList.remove("fixed-position");
+});
+
+// FUNCTION TO UNCHECK menu and remove backdrop
+function uncheck() {
+  burgerCB.checked = false;
+  backdrop.classList.remove("mobile-menu-backdrop");
+  body.classList.remove("fixed-position");
+}
+
+// backdrop click to close mobile menu
+backdrop.addEventListener("click", () => {
   uncheck();
 });
 
-function uncheck() {
-  burgerCB.checked = false;
-}
-
+// if page refreshed while menu open, close it
 if (burgerCB.checked == true && window.location.reload) {
   uncheck();
   console.log("page refreshed");
 }
-
-menuClose.addEventListener("click", () => {
-  backdrop.classList.remove("mobile-menu-backdrop");
-  body.classList.remove("fixed-position");
-});
 
 // rotate mobile dropdown arrows on click
 dropdownOne.addEventListener("click", () => {
