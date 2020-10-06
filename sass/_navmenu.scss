@@ -93,6 +93,9 @@ nav {
   font-size: 2rem;
   font-weight: 700;
   padding: 1rem 2rem;
+  &:hover {
+    background-color: darken($color-primary, 10%);
+  }
 }
 .show-dropdown {
   display: none;
@@ -156,12 +159,10 @@ input[type="checkbox"] {
         visibility: visible;
         background-color: $color-secondary;
         box-shadow: none;
-        padding-left: 1.3rem;
 
         a {
-          padding-left: 5rem;
           font-size: 1.8rem;
-          margin-left: 2rem;
+          margin-left: 3.5rem;
         }
       }
     }
@@ -219,7 +220,7 @@ input[type="checkbox"] {
     font-size: 2.5rem;
     .burger-bars {
       margin-top: 1.5rem;
-      width: 2.5rem;
+      width: 2.3rem;
     }
   }
 

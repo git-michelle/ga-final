@@ -245,6 +245,8 @@ nav {
   font-size: 2rem;
   font-weight: 700;
   padding: 1rem 2rem; }
+  .menu-btn:hover {
+    background-color: #1300cc; }
 
 .show-dropdown {
   display: none; }
@@ -291,15 +293,13 @@ input[type="checkbox"] {
       opacity: 1;
       visibility: visible;
       background-color: #e2f3f3;
-      box-shadow: none;
-      padding-left: 1.3rem; }
+      box-shadow: none; }
       nav ul ul li {
         display: block;
         width: 100%; }
       nav ul ul a {
-        padding-left: 5rem;
         font-size: 1.8rem;
-        margin-left: 2rem; }
+        margin-left: 3.5rem; }
   nav img {
     margin-left: 2.5rem; }
   nav .logo {
@@ -338,7 +338,7 @@ input[type="checkbox"] {
     font-size: 2.5rem; }
     .burger .burger-bars {
       margin-top: 1.5rem;
-      width: 2.5rem; }
+      width: 2.3rem; }
   [id="burger-checkbox"]:checked + ul {
     display: block; }
   [id^="dropdown"]:checked + ul {
@@ -409,7 +409,8 @@ footer.main-container {
         footer.main-container .subscribe-section form.subscribe-form input::placeholder {
           font-style: italic; }
         footer.main-container .subscribe-section form.subscribe-form input:focus {
-          outline: none; }
+          outline: none;
+          border: 0.2rem solid #e2f3f3; }
       footer.main-container .subscribe-section form.subscribe-form button.btn-basic {
         width: 10.9rem;
         background-color: #1800ff;
@@ -624,6 +625,8 @@ footer.main-container {
         .main-container.initiatives-main-section .initiatives-section .container-initiatives .bring-a-smile-content button {
           background-color: #1800ff;
           color: #fff; }
+          .main-container.initiatives-main-section .initiatives-section .container-initiatives .bring-a-smile-content button:hover {
+            background-color: #1300cc; }
         @media only screen and (max-width: 75em) {
           .main-container.initiatives-main-section .initiatives-section .container-initiatives .bring-a-smile-content {
             grid-row: 2;
@@ -651,6 +654,8 @@ footer.main-container {
         .main-container.initiatives-main-section .initiatives-section .container-initiatives .mothers-of-gold-content button {
           background-color: #1800ff;
           color: #fff; }
+          .main-container.initiatives-main-section .initiatives-section .container-initiatives .mothers-of-gold-content button:hover {
+            background-color: #1300cc; }
         @media only screen and (max-width: 75em) {
           .main-container.initiatives-main-section .initiatives-section .container-initiatives .mothers-of-gold-content {
             grid-row: 4;
@@ -688,6 +693,8 @@ footer.main-container {
       margin-top: 6.4rem;
       border: 0.3rem solid #e2f3f3;
       background-color: #fff; }
+      .main-container.ministry-section .ministry-content button:hover {
+        background-color: #fcfcfc; }
     @media only screen and (max-width: 75em) {
       .main-container.ministry-section .ministry-content {
         grid-row: 3;
@@ -711,6 +718,8 @@ footer.main-container {
       background-color: #1800ff;
       color: #fff;
       margin-top: 6.4rem; }
+      .main-container.become-a-ga .content-container button:hover {
+        background-color: #1300cc; }
 
 .main-container.main-container-contact {
   grid-template-rows: min-content; }
