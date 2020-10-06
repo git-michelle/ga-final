@@ -150,7 +150,7 @@
       &:hover {
         transition: transform 1s ease;
         transform: translateY(0.08rem);
-        background-color: darken($color-primary, 1%);
+        background-color: darken($color-primary, 10%);
       }
       &:focus {
         outline: none;

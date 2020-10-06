@@ -1,9 +1,7 @@
 nav {
   background: $color-light;
   box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.15);
-  //   height: 7rem;
   font-family: $font-body;
-  margin: 0 auto;
   max-width: 192rem;
 
   &:after {
@@ -136,6 +134,7 @@ input[type="checkbox"] {
         width: 100%;
         a {
           font-size: 2rem;
+          line-height: 5rem;
           &:hover {
             box-shadow: none;
           }
@@ -157,7 +156,7 @@ input[type="checkbox"] {
         visibility: visible;
         background-color: $color-secondary;
         box-shadow: none;
-        padding-left: 1.5rem;
+        padding-left: 1.3rem;
 
         a {
           padding-left: 5rem;
@@ -185,7 +184,7 @@ input[type="checkbox"] {
     color: $text-dark;
     font-size: 2rem;
     padding-left: 2rem;
-    line-height: 7rem;
+    line-height: 5rem;
     cursor: pointer;
 
     //if remove <br> infront of home-item, add left padding.
@@ -214,9 +213,14 @@ input[type="checkbox"] {
     position: absolute;
     top: 0;
     right: 2rem;
-    line-height: 7rem;
+    align-self: center;
+
     cursor: pointer;
     font-size: 2.5rem;
+    .burger-bars {
+      margin-top: 1.5rem;
+      width: 2.5rem;
+    }
   }
 
   [id="burger-checkbox"] {
@@ -237,18 +241,7 @@ input[type="checkbox"] {
       }
     }
   }
-  span.burger-bars {
-    &:before {
-      content: "\2630";
-      color: $color-primary;
-      line-height: 7rem;
-      cursor: pointer;
-      font-size: 3rem;
-      font-weight: bolder;
-      z-index: 500;
-      padding: 1rem 0 1rem 1rem;
-    }
-  }
+
   span.cancel {
     &:before {
       content: "\00d7";
@@ -259,5 +252,29 @@ input[type="checkbox"] {
       font-size: 5rem;
       font-weight: lighter;
     }
+  }
+}
+
+@media screen and (max-width: $bp-small) {
+  nav {
+    img {
+      align-self: center;
+      margin-left: 2rem;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      line-height: 4;
+    }
+
+    .burger .burger-bars {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-x-small) {
+  .burger .burger-bars {
+    width: 2rem;
   }
 }

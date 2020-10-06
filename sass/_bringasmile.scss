@@ -95,6 +95,11 @@
         grid-column: 2 / span 10;
       }
 
+      .inline-link {
+        color: $color-primary;
+        cursor: pointer;
+      }
+
       .key-component {
         &--1 {
           grid-row: 2;

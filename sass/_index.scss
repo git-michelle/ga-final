@@ -2,13 +2,13 @@
   grid-template-rows: 90vh;
 
   @media only screen and (max-width: $bp-large) {
-    grid-template-rows: 70vh;
-  }
-  @media only screen and (max-width: $bp-medium) {
-    grid-template-rows: 50vh;
+    grid-template-rows: 60vh;
   }
   @media only screen and (max-width: $bp-small) {
-    grid-template-rows: 70vh;
+    grid-template-rows: 80vh;
+  }
+  @media only screen and (max-width: $bp-x-small) {
+    grid-template-rows: 95vh;
   }
 
   //hero section

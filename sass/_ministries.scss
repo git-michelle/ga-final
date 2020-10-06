@@ -105,6 +105,9 @@
       background-color: $color-primary;
       color: $text-light;
       margin-top: $space-md;
+      &:hover {
+        background-color: darken($color-primary, 10%);
+      }
     }
 
     text-align: center;

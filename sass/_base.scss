@@ -23,7 +23,7 @@ $bp-large: 75em; //1200px
 $bp-md-lg: 64em; //1025px
 $bp-medium: 48em; //768 px
 $bp-small: 37.5em; //600px
-
+$bp-x-small: 22.4em; //359px
 //SPACES
 $space-tiny: 1.6rem;
 $space-sm: 3.2rem;
@@ -47,7 +47,7 @@ h2 {
   font-size: 5rem;
   margin-bottom: $space-md;
   @media only screen and (max-width: $bp-small) {
-    font-size: 3.1rem;
+    font-size: 2.8rem;
     margin-bottom: $space-sm;
   }
 }
@@ -251,11 +251,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: $bp-large) {
     font-size: 55%;
-  }
-
-  @media only screen and (max-width: $bp-medium) {
-    font-size: 50%;
   }
 }

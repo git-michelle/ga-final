@@ -4,6 +4,9 @@
   .about-headers {
     grid-row: 1;
     grid-column: 2 / span 7;
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 2 / span 12;
+    }
   }
 
   .about-content {

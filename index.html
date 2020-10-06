@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
       <link
       href="https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@500&family=Rubik:wght@500&display=swap"
       rel="stylesheet"
@@ -22,7 +22,8 @@
   <a href="/index.html"><img src="img/logo-navbar.svg" alt="my logo" /></a>
   <div class="logo"><a href="/index.html">Gift Angels Foundation</a></div>
   <!-- checkbox for mobile view  -->
-  <label for="burger-checkbox" class="burger"><span class="burger-bars"></span></label>
+  <label for="burger-checkbox" class="burger"><img src="/img/burger-menu.svg" alt="burger-menu"
+      class="burger-bars"></label>
   <input type="checkbox" id="burger-checkbox" />
 
   <ul>
@@ -256,7 +257,7 @@
         <p class="p-style">Sign up to stay updated on Gift Angels</p>
 
         <form method="POST" data-netlify="true" name="subscribe" class="subscribe-form">
-          <input type="email" name="email" placeholder="Email Address" />
+          <input type="email" name="email" placeholder="Email Address" required />
           <button type="submit" href="#" class="btn-basic" >Sign Up</button>
         </form>
       </div>
@@ -293,8 +294,9 @@
 
       <div class="footer-bottom">
         <div class="footer-logo">
+          <img src="./img/gift-angels-logo.png" alt="Gift Angels logo" />
           <p class="brand">
-            <img src="./img/gift-angels-logo.png" alt="Gift Angels logo" /> Gift
+            Gift
             Angels Foundation
           </p>
         </div>
