@@ -53,7 +53,7 @@
         &--givingway {
           background-color: $color-primary;
           color: $text-light;
-          margin-bottom: $space-tiny;
+          // margin-bottom: $space-tiny;
 
           &:hover {
             transition: transform 1s ease;
@@ -66,19 +66,19 @@
           }
         }
 
-        &--paypal {
-          background-color: $color-light;
-          color: $text-dark;
+        // &--paypal {
+        //   background-color: $color-light;
+        //   color: $text-dark;
 
-          &:hover {
-            transition: transform 1s ease;
-            transform: translateY(0.08rem);
-            background-color: darken($color-light, 1%);
-          }
-          &:focus {
-            outline: none;
-          }
-        }
+        //   &:hover {
+        //     transition: transform 1s ease;
+        //     transform: translateY(0.08rem);
+        //     background-color: darken($color-light, 1%);
+        //   }
+        //   &:focus {
+        //     outline: none;
+        //   }
+        // }
       }
     }
 

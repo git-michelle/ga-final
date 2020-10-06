@@ -907,22 +907,12 @@ footer.main-container {
         cursor: pointer; }
         .main-container.main-container-donate aside.donate-options .container-flex button.btn--givingway {
           background-color: #1800ff;
-          color: #fff;
-          margin-bottom: 1.6rem; }
+          color: #fff; }
           .main-container.main-container-donate aside.donate-options .container-flex button.btn--givingway:hover {
             transition: transform 1s ease;
             transform: translateY(0.08rem);
             background-color: #1300cc; }
           .main-container.main-container-donate aside.donate-options .container-flex button.btn--givingway:focus {
-            outline: none; }
-        .main-container.main-container-donate aside.donate-options .container-flex button.btn--paypal {
-          background-color: #fff;
-          color: #222; }
-          .main-container.main-container-donate aside.donate-options .container-flex button.btn--paypal:hover {
-            transition: transform 1s ease;
-            transform: translateY(0.08rem);
-            background-color: #fcfcfc; }
-          .main-container.main-container-donate aside.donate-options .container-flex button.btn--paypal:focus {
             outline: none; }
     @media only screen and (max-width: 64em) {
       .main-container.main-container-donate aside.donate-options {
