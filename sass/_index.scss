@@ -10,6 +10,10 @@
   @media only screen and (max-width: $bp-x-small) {
     grid-template-rows: 95vh;
   }
+  //for landscape on small devices
+  @media screen and (max-height: $bp-medium) and (orientation: landscape) {
+    grid-template-rows: 90vh;
+  }
 
   //hero section
 

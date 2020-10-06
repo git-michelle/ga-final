@@ -6,6 +6,9 @@ h1 {
   @media only screen and (max-width: 37.5em) {
     h1 {
       font-size: 4rem; } }
+  @media only screen and (max-height: 37.5em) and (orientation: landscape) {
+    h1 {
+      font-size: 4rem; } }
 
 h2 {
   font-family: "Rubik", sans-serif;
@@ -46,6 +49,9 @@ h4 {
   font-size: 2.5rem;
   line-height: 1.5; }
   @media only screen and (max-width: 37.5em) {
+    .p-style-hero {
+      font-size: 2rem; } }
+  @media only screen and (max-height: 37.5em) and (orientation: landscape) {
     .p-style-hero {
       font-size: 2rem; } }
 
@@ -498,6 +504,9 @@ footer.main-container {
   @media only screen and (max-width: 22.4em) {
     .main-container.hero-section {
       grid-template-rows: 95vh; } }
+  @media screen and (max-height: 48em) and (orientation: landscape) {
+    .main-container.hero-section {
+      grid-template-rows: 90vh; } }
   .main-container.hero-section .hero {
     background: linear-gradient(to top right, rgba(0, 0, 0, 0.6), rgba(22, 9, 95, 0.5)), url(../img/home/home1.jpg) no-repeat center center/cover;
     grid-row: 1;
@@ -1365,12 +1374,11 @@ footer.main-container {
   .main-container.awareness-section-container .awareness-content {
     grid-row: 2;
     grid-column: 2 / span 6; }
-    .main-container.awareness-section-container .awareness-content p {
-      padding-bottom: 3.2rem; }
+    .main-container.awareness-section-container .awareness-content p:not(:last-child) {
+      margin-bottom: 3.2rem; }
     @media only screen and (max-width: 75em) {
       .main-container.awareness-section-container .awareness-content {
         grid-column: 2 / span 12;
-        padding-bottom: 3.2rem;
         grid-row: 3; } }
 
 .main-container.health-initiatives-container {
@@ -1395,7 +1403,7 @@ footer.main-container {
     grid-row: 2;
     grid-column: 7 / span 7; }
     .main-container.health-initiatives-container .health-content p {
-      padding-bottom: 3.2rem; }
+      margin-bottom: 3.2rem; }
     @media only screen and (max-width: 75em) {
       .main-container.health-initiatives-container .health-content {
         grid-column: 2 / span 12;

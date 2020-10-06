@@ -259,12 +259,13 @@
     grid-column: 2 / span 6;
 
     p {
-      padding-bottom: $space-sm;
+      &:not(:last-child) {
+        margin-bottom: $space-sm;
+      }
     }
 
     @media only screen and (max-width: $bp-large) {
       grid-column: 2 / span 12;
-      padding-bottom: $space-sm;
       grid-row: 3;
     }
   }
@@ -303,7 +304,7 @@
     grid-column: 7 / span 7;
 
     p {
-      padding-bottom: $space-sm;
+      margin-bottom: $space-sm;
     }
 
     @media only screen and (max-width: $bp-large) {
