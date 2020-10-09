@@ -72,7 +72,7 @@
         </li>
     
         <!-- menu items 4 and 5 -->
-        <li><a href="/contact.html" class="current-page">Contact</a></li>
+        <li><a href="/contactpage.html" class="current-page">Contact</a></li>
         <li><a href="/donate.html" class="menu-btn" type="button">Donate</a></li>
       </ul>
     </nav>
@@ -107,14 +107,14 @@
             Entebbe, Uganda
           </p>
           <img src="/img/footer/envelope-icon.svg" alt="email icon">
-          <p class="p-style address-items--2">info@giftangelsfoundation.com</p>
+          <p class="p-style address-items--2">info@giftangelsfoundation.org</p>
           <img src="/img/footer/phone-icon.svg" alt="phone icon">
           <p class="p-style address-items--3">+256393252922</p>
         </div>
       </address>
 
       <section class="contact-form-container">
-        <form method="POST" data-netlify="true" name="contact" class="form">
+        <form method="POST" action="process.php" name="contact" class="form">
           <label for="name">Full Name *</label>
           <input
             type="text"
@@ -172,8 +172,11 @@
     
         <p class="p-style">Sign up to stay updated on Gift Angels</p>
     
-        <form method="POST" data-netlify="true" name="subscribe" class="subscribe-form">
-          <input type="email" name="email" placeholder="Email Address" required />
+        <form action="https://giftangelsfoundation.us2.list-manage.com/subscribe/post" method="POST name=" subscribe"
+          class="subscribe-form">
+          <input type="hidden" name="u" value="7c9e5f45df29f397926e93d84">
+          <input type="hidden" name="id" value="a4d487b332">
+          <input type="email" name="MERGE0" id="MERGE0" placeholder="Email Address" required />
           <button type="submit" href="#" class="btn-basic">Sign Up</button>
         </form>
       </div>
@@ -220,7 +223,7 @@
             Copyright by Gift Angels Foundation 2020
             <span> &nbsp; | &nbsp;</span>
           </p>
-          <p class="p-style"><em> Designed with love by UX Rescue</em></p>
+          <p class="p-style"><em> Designed with love by <a href="https://www.uxrescue.org/" target="_blank">UX Rescue</a></em></p>
         </div>
         <p class="p-style">Registration No: 80020001783911</p>
       </div>

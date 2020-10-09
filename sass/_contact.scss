@@ -164,3 +164,30 @@
     }
   }
 }
+
+//message after contact form has been submitted
+#success.main-container {
+  grid-template-rows: min-content;
+  background-color: $color-light;
+  margin-top: 7rem;
+
+  h3 {
+    grid-row: 1;
+    grid-column: 2 / span 12;
+    padding-bottom: $space-sm;
+  }
+
+  p {
+    grid-row: 2;
+    grid-column: 2 / span 12;
+    padding-bottom: $space-md;
+  }
+
+  a {
+    grid-row: 3;
+    grid-column: 2 / span 12;
+    color: $color-primary;
+    font-weight: 700;
+    padding-bottom: $space-lg;
+  }
+}
