@@ -28,6 +28,20 @@ footer.main-container {
     @media only screen and (max-width: $bp-md-lg) {
       grid-row: 1;
       grid-column: 2 / span 12;
+
+      .contact-item {
+        &--1 img {
+          content: url("/img/footer/phone-icon-mobile.svg");
+        }
+        &--2 img {
+          content: url("/img/footer/envelope-icon-mobile.svg");
+        }
+        &--3 img {
+          margin-top: 1.5rem;
+          margin-left: 0.28rem;
+          content: url("/img/footer/location-icon-mobile.svg");
+        }
+      }
     }
   }
 

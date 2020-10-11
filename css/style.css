@@ -394,7 +394,15 @@ footer.main-container {
     @media only screen and (max-width: 64em) {
       footer.main-container .contact-section {
         grid-row: 1;
-        grid-column: 2 / span 12; } }
+        grid-column: 2 / span 12; }
+        footer.main-container .contact-section .contact-item--1 img {
+          content: url("/img/footer/phone-icon-mobile.svg"); }
+        footer.main-container .contact-section .contact-item--2 img {
+          content: url("/img/footer/envelope-icon-mobile.svg"); }
+        footer.main-container .contact-section .contact-item--3 img {
+          margin-top: 1.5rem;
+          margin-left: 0.28rem;
+          content: url("/img/footer/location-icon-mobile.svg"); } }
   footer.main-container .subscribe-section {
     grid-row: 1;
     grid-column: 6 / span 4;
